@@ -23,7 +23,7 @@ export default class CenaClientes extends Component {
                 <StatusBar
                     backgroundColor='#CCC'
                 />
-                <BarraNavegacao />
+                <BarraNavegacao  voltar navigator={this.props.navigator}/>
                 <View style={styles.cabecalho}>
                     <Image source={detalheClientes} />
                     <Text style={styles.textTitulo}>Nossos Clientes</Text>

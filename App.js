@@ -27,9 +27,9 @@ export default class App extends Component {
           if (route.id === 'a') {
             return (<CenaPrincipal navigator={navigator} />);
           }
-    //      if (route.id === 'b') {
-      //      return (<CenaClientes />);
-        //  }
+          if (route.id === 'b') {
+            return (<CenaClientes navigator={navigator}/>);
+          }
         }}
       />
      

@@ -23,6 +23,10 @@ export default class CenaEmpresa extends Component {
                     backgroundColor='#CCC'
                 />
                 <BarraNavegacao  voltar navigator={this.props.navigator}/>
+                <View style={styles.cabecalho}>
+                    <Image source={detalheEmpresa} />
+                    <Text style={styles.textTitulo}>Empresa</Text>
+                </View>
                 <View style={styles.detalheEmpresa}>
                    <Text style={styles.txtEmpresa}>
                    A ATM consultoria está no mercado a mais de 20 anos

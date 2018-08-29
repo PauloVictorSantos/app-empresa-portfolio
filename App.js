@@ -20,6 +20,7 @@ import CenaPrincipal from './src/components/CenaPrincipal';
 
 import CenaClientes from './src/components/CenaClientes';
 import CenaContatos from './src/components/CenaContatos';
+import CenaEmpresa from './src/components/CenaEmpresa';
 
 export default class App extends Component {
   render() {
@@ -34,6 +35,9 @@ export default class App extends Component {
           }
           if (route.id === 'c') {
             return (<CenaContatos navigator={navigator} />);
+          }
+          if (route.id === 'd') {
+            return (<CenaEmpresa navigator={navigator} />);
           }
         }}
       />

@@ -12,7 +12,7 @@ import {
 import BarraNavegacao from './BarraNavegacao';
 
 const logo = require('../imgs/logo.png');
-const MenuEmpresa = require('../imgs/menu_cliente.png');
+const MenuEmpresa = require('../imgs/menu_empresa.png');
 const MenuServico = require('../imgs/menu_servico.png');
 const MenuContato = require('../imgs/menu_contato.png');
 const MenuCliente = require('../imgs/menu_cliente.png');
@@ -32,18 +32,20 @@ export default class CenaPrincipal extends Component {
         <View style={styles.menu}>
           <View style={styles.menuGrupo}>
             <TouchableHighlight onPress={() => this.props.navigator.push({ id: 'b' })}>
+              <Image source={MenuCliente} style={styles.imgMenu} />
+            </TouchableHighlight>
+            <TouchableHighlight onPress={() => this.props.navigator.push({ id: 'c' })}>
+              <Image source={MenuContato} style={styles.imgMenu} />
+            </TouchableHighlight>
+          </View>
+          <View style={styles.menuGrupo}>
+            <TouchableHighlight onPress={() => this.props.navigator.push({ id: 'd' })}>
               <Image source={MenuEmpresa} style={styles.imgMenu} />
             </TouchableHighlight>
             <Image source={MenuServico} style={styles.imgMenu} />
           </View>
-          <View style={styles.menuGrupo}>
-            <TouchableHighlight onPress={() => this.props.navigator.push({ id: 'c' })}>
-              <Image source={MenuContato} style={styles.imgMenu} />
-            </TouchableHighlight>
-            <Image source={MenuCliente} style={styles.imgMenu} />
-          </View>
         </View>
-      </View>
+      </View >
     );
   }
 }

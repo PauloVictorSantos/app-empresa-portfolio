@@ -31,21 +31,35 @@ export default class CenaPrincipal extends Component {
         </View>
         <View style={styles.menu}>
           <View style={styles.menuGrupo}>
-            <TouchableHighlight onPress={() => this.props.navigator.push({ id: 'b' })}>
+            <TouchableHighlight 
+            underlayColor={'#B9C941'}
+            activeOpacity={0.3}
+            onPress={() => this.props.navigator.push({ id: 'b' })}>
               <Image source={MenuCliente} style={styles.imgMenu} />
             </TouchableHighlight>
-            <TouchableHighlight onPress={() => this.props.navigator.push({ id: 'c' })}>
+            <TouchableHighlight 
+             underlayColor={'#61BD8C'}
+             activeOpacity={0.3}
+            onPress={() => this.props.navigator.push({ id: 'c' })}>
               <Image source={MenuContato} style={styles.imgMenu} />
             </TouchableHighlight>
           </View>
+
           <View style={styles.menuGrupo}>
-            <TouchableHighlight onPress={() => this.props.navigator.push({ id: 'd' })}>
+            <TouchableHighlight 
+             underlayColor={'#EC7148'}
+             activeOpacity={0.3}
+            onPress={() => this.props.navigator.push({ id: 'd' })}>
               <Image source={MenuEmpresa} style={styles.imgMenu} />
             </TouchableHighlight>
-            <TouchableHighlight onPress={() => this.props.navigator.push({ id: 'e' })}>
+            <TouchableHighlight 
+             underlayColor={'#19d1c8'}
+             activeOpacity={0.3}
+            onPress={() => this.props.navigator.push({ id: 'e' })}>
               <Image source={MenuServico} style={styles.imgMenu} />
             </TouchableHighlight>
           </View>
+        
         </View>
       </View >
     );

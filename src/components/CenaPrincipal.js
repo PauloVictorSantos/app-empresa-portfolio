@@ -21,7 +21,7 @@ const MenuCliente = require('../imgs/menu_cliente.png');
 export default class CenaPrincipal extends Component {
   render() {
     return (
-      <View>
+      <View  style={{flex:1, backgroundColor: '#fff'}}>
         <StatusBar
           backgroundColor='#CCC'
         />

@@ -17,7 +17,10 @@ export default class BarraNavegacao extends Component {
         if (this.props.voltar) {
             return (
                 <View style={[styles.barraTitulo,{backgroundColor: this.props.corDeFundo}]}>
-                    <TouchableHighlight onPress={()=>{this.props.navigator.pop();}}>
+                    <TouchableHighlight
+                     underlayColor={this.props.corDeFundo}
+                     activeOpacity={0.3} 
+                     onPress={()=>{this.props.navigator.pop();}}>
                         <Image source={btnVoltar} />
                     </TouchableHighlight>
                     <Text style={styles.titulo}>ATM Consultoria</Text>
